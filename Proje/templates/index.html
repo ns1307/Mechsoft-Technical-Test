@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meetings App</title>
+        <!-- CSS Dosyasının Yolu Güncellendi -->
+        <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    </head>
+<body>
+    <!-- New Meeting Button -->
+    <div style="text-align: left; padding: 20px;">
+        <a class="waves-effect waves-light btn modal-trigger" href="#newMeetingModal">Yeni Toplantı</a>
+    </div>
+    <!-- Warning Modal Structure -->
+    <div id="warningModal" class="modal">
+        <div class="modal-content">
+            <h4>Uyarı</h4>
+            <p id="warningText">Uyarı mesajı burada yer alacak.</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Tamam</a>
+        </div>
+    </div>
+
+    <!-- Modal Structure for New/Edit Meeting -->
+    <div id="newMeetingModal" class="modal">
+        <div class="modal-content">
+            <h4 id="modalTitle">Yeni Toplantı</h4>
+            <form id="newMeetingForm">
+                <div class="input-field">
+                    <input id="meetingSubject" type="text" class="validate">
+                    <label for="meetingSubject">Toplantı Konusu</label>
+                </div>
+                <div class="input-field">
+                    <input id="meetingDate" type="text" class="datepicker">
+                    <label for="meetingDate">Tarih</label>
+                </div>
+                <div class="input-field">
+                    <input id="startTime" type="text" class="timepicker">
+                    <label for="startTime">Başlangıç saati</label>
+                </div>
+                <div class="input-field">
+                    <input id="endTime" type="text" class="timepicker">
+                    <label for="endTime">Bitiş saati</label>
+                </div>
+                <div class="input-field">
+                    <input id="participants" type="text" class="validate">
+                    <label for="participants">Katılımcılar</label>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="waves-effect waves-green btn-flat modal-close">İptal</a>
+            <a href="#!" class="waves-effect waves-green btn-flat" onclick="saveMeeting()">Kaydet</a>
+        </div>
+    </div>
+
+    <div id='meetingList'></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- JavaScript Dosyasının Yolu Güncellendi -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

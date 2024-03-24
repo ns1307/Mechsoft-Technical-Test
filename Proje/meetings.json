@@ -1,0 +1,22 @@
+[
+    {
+        "subject": "asddsaasddas",
+        "date": "2024-03-29",
+        "startTime": "18:58",
+        "endTime": "21:58",
+        "participants": [
+            "asdsdaasddsa"
+        ],
+        "meetingID": 1
+    },
+    {
+        "meetingID": 2,
+        "subject": "asddassda",
+        "date": "2024-03-27",
+        "startTime": "00:39",
+        "endTime": "00:39",
+        "participants": [
+            "asdasd"
+        ]
+    }
+]

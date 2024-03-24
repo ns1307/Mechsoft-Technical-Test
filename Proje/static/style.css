@@ -1,0 +1,71 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.modal {
+    max-width: 800px;
+    overflow: visible;
+}
+
+.input-field label {
+    color: #000;
+}
+
+.input-field input[type=text]:focus + label {
+    color: #2962FF;
+}
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #2962FF;
+    box-shadow: 0 1px 0 0 #2962FF;
+}
+
+.datepicker.datepicker-modal, .timepicker.timepicker-modal {
+    color: #000;
+}
+
+.btn, .btn-flat {
+    margin: 5px;
+}
+
+.card {
+    background-color: #2196F3;
+    color: #ffffff;
+}
+
+.card-content .card-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card-action a {
+    color: #ffd600 !important;
+    margin-right: 10px;
+}
+
+#meetingList .row {
+    margin-bottom: 20px;
+}
+#meetingList {
+    max-height: auto; /* Adjust based on your needs */
+    overflow-y: auto;
+}
+
+.waves-effect.waves-light.btn {
+    background-color: #2962FF;
+}
+
+.waves-effect.waves-light.btn.yellow {
+    background-color: #FFEB3B;
+    color: #000;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    .modal {
+        width: 95% !important;
+    }
+}
