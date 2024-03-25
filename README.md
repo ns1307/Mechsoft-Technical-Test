@@ -29,7 +29,7 @@ flask run
 - **Materialize CSS**: Arayüz bileşenleri için modern bir CSS framework
 
 ## Özellikler
-- Web arayüzünde yapılan "Yeni Toplantı ekleme", "Toplantı bilgilerini güncelleştirme", "Toplantı silme" gibi her işlem Flask ile "meetings.json" dosyasına yansıtılır. 
+- Web arayüzünde yapılan "Yeni Toplantı ekleme", "Toplantı bilgilerini güncelleştirme", "Toplantı silme" gibi her işlem Flask ile "meetings.json" dosyasına yansıtılır.  "meetings.json" dosyasında id,toplantı tarihi, saatleri, katılımcı listesi gibi bir çok bilgiyi tutuyoruz.
 - **Toplantı Kayıt Formu**: Kullanıcıların toplantıya ait bilgileri girebilecekleri arayüz.
 - Toplantı oluştururken alanların boş olmaması, seçilen tarihin gelecekte olması, toplantı bitiş saatinin toplantı başlangıç saatinden önce olmaması gibi önlemler alınmıştır.
 - **Toplantı Güncelleme Formu**: Kullanıcıların toplantı bilgilerini güncelleyebilecekleri arayüz.
