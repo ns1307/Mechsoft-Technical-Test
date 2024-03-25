@@ -15,15 +15,12 @@ Projeyi çalıştırmak için bilgisayarda Python ve Flask yüklü olmalıdır.
 Projeyi lokal olarak çalıştırmak için aşağıdaki adımları takip edin:
 
 1. Proje dosyalarını bilgisayarınıza klonlayın.
-
 2. Proje için gerekli olan python ve flask kurulumunu tamamlayın.
-
 3. Dosyanın bulunduğu dizinde terminali açarak Flask'ı çalıştırın:
 ```bash
 run flask
 ```
-
-5. Tarayıcınızda `http://127.0.0.1:5000/` adresine giderek uygulamayı kullanabilirsiniz.
+4. Tarayıcınızda `http://127.0.0.1:5000/` adresine giderek uygulamayı kullanabilirsiniz.
 
 ## Kullanılan Teknolojiler
 
